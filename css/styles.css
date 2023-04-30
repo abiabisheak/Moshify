@@ -346,7 +346,9 @@ a{
     right: 5%;
 } 
 
-/* .plan--popular .plan__name::before{
+/* Not working
+
+.plan--popular .plan__name::before{
     content: url(..//images/popular.png);
     display: inline;
     width: 40px;
@@ -374,5 +376,21 @@ a{
     }
 }
 
+/* Media */
+.media {
+    display: flex;
+}
+
+.media__title {
+    margin-top: 0;
+}
+
+.media__body{
+    margin: 0 2rem;
+}
+
+.media__image{
+    margin-top: 1rem;
+}
 
 

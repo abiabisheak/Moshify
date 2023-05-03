@@ -451,3 +451,14 @@ a{
         bottom: 6px;
     }
 }
+
+/* Grid */
+.grid{
+    display: grid;
+}
+
+@media screen and (min-width: 768px){
+    .grid--1x3{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

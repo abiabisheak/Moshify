@@ -573,7 +573,7 @@ a{
     font-size: 3rem;
 }
 
-collapsible__chevron{
+.collapsible__chevron{
     transform: rotate(-90deg);
     transition: transform 0.3s;
 }

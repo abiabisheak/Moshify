@@ -120,9 +120,9 @@ a{
     padding: 0.5rem 1.5rem;
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (min-width: 1024px){
     .badge{
-        font-size: 1.5px;
+        font-size: 1.5rem;
     }
     
     .badge--small{
@@ -206,6 +206,14 @@ a{
     white-space: nowrap;
     text-align: center;
     margin: 1rem 0 ;
+    outline: 0;
+}
+
+.btn .icon{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
 }
 
 .btn--primary{
@@ -285,7 +293,7 @@ a{
 .input-group .input{
     flex-grow: 1;
     border: 0;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 2rem;
 }
 
 .input-group .btn{
@@ -324,11 +332,19 @@ a{
     color: white;
 }
 
+.card--primary .badge--primary{
+    background-color: #126de4;
+}
+
+
 .card--secondary .badge--secondary{
     background-color: #02cdf1;
 }
 
 /* Plan */
+.plan{
+    transition: transform 0.15s ease-out;
+}
 
 .plan__name{
     color: white;
@@ -364,11 +380,27 @@ a{
     position: relative;
 }
 
- .popular-badge{
+.plan--popular{
+    transform: scale(1.1);
+}
+
+.plan--popular .popular--badge{
     width: 70px;
     position: absolute;
     top: 0;
     right: 5%;
+} 
+
+.plan--others .popular--badge{
+    display: none;
+} 
+
+.plan:hover{
+    transform: scale(1.05);
+}
+
+.plan--popular:hover{
+    transform: scale(1.15);
 } 
 
 /* Not working
@@ -606,6 +638,10 @@ a{
     margin-top: 0;
 }
 
+.block__description{
+    font-size: 2.2rem;
+}
+
 .block--dark{
     background-color: #000;
     color: #fff;
@@ -721,6 +757,44 @@ a{
         text-align: left;
     }
 }
+
+/* Block Domain */
+.block-domain .input-group{
+    box-shadow: 0 0 30px 20px #e6ebee;
+    border: 0;
+    margin: 4rem auto;
+    max-width: 670px;
+}
+
+.block-domain__prices{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 6rem);
+    justify-items: center;
+    font-size: 2rem;
+    font-weight: 600;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px){
+    .block-domain__prices{
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    font-size: 1.5rem;
+    }
+}
+
+/* Plan Block */
+.block-plans .grid{
+    gap: 8rem 5rem;
+}
+
+.block-plans .card{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
 
 
 

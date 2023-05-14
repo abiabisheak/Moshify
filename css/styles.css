@@ -312,7 +312,7 @@ a{
     overflow: hidden;
 }
 
-.card-no-overflows {
+.card-no-overflow {
     overflow: visible;
 }
 
